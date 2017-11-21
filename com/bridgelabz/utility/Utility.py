@@ -52,21 +52,26 @@ class Utility:
 
             return("it is not a leap year")
 
-    def powerof2(self,number):
-        """
+    def powerof2(self,max):
 
-        :param number:
-        :type number:int
-        :return:
-        :rtype:
-        """
-        if(number>0 and number<32):
-         for i in range(0,number):
-            print("2*",i,pow(2,i))
-            if(i==number):
-                return
-        else:
-            return ("pls enter correct number")
+
+
+        n = 0
+        while(n<max):
+
+            yield 2**n
+            n +=1
+
+
+
+        #
+        # if(number>0 and number<32):
+        #  for i in range(0,number):
+        #     print("2*",i,pow(2,i))
+        #     if(i==number):
+        #         return
+        # else:
+        #     return ("pls enter correct number")
 
 
     def findharmonic(self,number):
