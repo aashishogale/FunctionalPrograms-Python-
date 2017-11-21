@@ -1,0 +1,13 @@
+import re
+
+class UserName:
+    def replaceFunction(self):
+
+        originalstring="Hello <<UserName>>, How are you?"
+        inputstring=input("enter your string")
+        newstring=re.sub(r'<<UserName>>',inputstring,originalstring)
+        print(newstring)
+        return
+
+newuser=UserName()
+newuser.replaceFunction()
